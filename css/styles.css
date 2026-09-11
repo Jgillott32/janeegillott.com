@@ -1,0 +1,100 @@
+/* ========================================
+   JaneeGillott.com
+   Main Stylesheet
+   ======================================== */
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* Navigation */
+header {
+    padding: 20px 8%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav a {
+    color: #222222;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+section {
+    padding: 80px 8%;
+}
+
+/* Hero */
+#home {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+#home h2 {
+    font-size: 1.75rem;
+    margin-top: 15px;
+}
+
+#home p {
+    max-width: 650px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* Section headings */
+section > h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    padding: 30px 8%;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+}
